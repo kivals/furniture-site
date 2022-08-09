@@ -5,4 +5,7 @@
 @import "config/settings";
 
 // подключения компонентов страницы
+@import "./components/logo";
+@import "./components/site-nav";
+@import "./components/user-nav";
 @import "./components/header";

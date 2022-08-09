@@ -1,0 +1,44 @@
+.user-nav {
+  display: flex;
+
+  &__item {
+    @include mr(22px);
+    a {
+      display: block;
+    }
+  }
+
+  &__item--cart {
+    position: relative;
+    p {
+      margin: 0;
+      @include flex-all-center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: 50%;
+      background-color: #313133;
+      width: 18px;
+      height: 18px;
+      color: var(--light-color);
+      font-weight: 500;
+      line-height: 16px;
+      font-size: 12px;
+      transform: translateX(60%);
+    }
+  }
+
+  &__item--search a {
+    width: 24px;
+    height: 27px;
+    background-image: url("../img/search.svg");
+    background-size: 24px 27px;
+    background-repeat: no-repeat;
+  }
+
+  &__item--cart a {
+    width: 23px;
+    height: 27px;
+    background-image: url("../img/cart.svg");
+  }
+}

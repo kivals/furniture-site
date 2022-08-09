@@ -1,0 +1,27 @@
+.site-nav {
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__item {
+    @include mr(60px);
+  }
+
+  &__link {
+    opacity: 1;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--dark-color);
+    transition: opacity ease 0.2s;
+
+    @include hover {
+      opacity: 0.6;
+    }
+  }
+}
