@@ -4,17 +4,16 @@
 
   &__container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
 
   &__logo {
     flex-shrink: 0;
-    margin-right: 20px;
+    margin-right: 138px;
   }
 
-  &____site-nav {
-    flex-grow: 0;
+  &__site-nav {
+    flex: 1;
   }
 
   &__user-nav {

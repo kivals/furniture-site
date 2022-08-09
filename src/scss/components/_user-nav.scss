@@ -5,6 +5,12 @@
     @include mr(22px);
     a {
       display: block;
+      opacity: 1;
+      transition: opacity ease 0.2s;
+
+      @include hover {
+        opacity: 0.6;
+      }
     }
   }
 
