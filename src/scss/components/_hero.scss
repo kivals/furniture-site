@@ -1,4 +1,43 @@
 .hero {
+  padding-top: 196px;
+
+  &__swiper {
+    position: relative;
+  }
+
+  &__pagination {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &__pagination-bullet {
+    @include flex-all-center;
+
+    cursor: pointer;
+    padding: 7px 20px;
+    font-family: 'PlayfairDisplay', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--black-color);
+    opacity: 0.3;
+    transition: opacity ease 0.2s;
+    margin-bottom: 5px;
+
+    &--active {
+      opacity: 1;
+      border-right: 2px solid var(--black-color);
+      font-size: 40px;
+      color: var(--black-color);
+    }
+  }
+
   &__item {
     display: flex;
     align-items: center;

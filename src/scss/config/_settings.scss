@@ -105,3 +105,8 @@ a {
 .page--ios .dis-scroll {
   position: relative;
 }
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  left: auto;
+  width: auto;
+}
