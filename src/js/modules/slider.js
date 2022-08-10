@@ -1,6 +1,6 @@
 // Подключение свайпера
-import Swiper, { Navigation, Scrollbar, Pagination } from 'swiper';
-Swiper.use([Navigation, Scrollbar, Pagination]);
+import Swiper, { Navigation, Pagination } from 'swiper';
+Swiper.use([Navigation, Pagination]);
 
 new Swiper(".hero__swiper", {
   pagination: {

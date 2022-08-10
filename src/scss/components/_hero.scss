@@ -1,11 +1,13 @@
 .hero {
   padding-top: 196px;
+  background: linear-gradient(to right, transparent 59%, var(--accent-color) 0%);
 
   &__swiper {
     position: relative;
   }
 
   &__pagination {
+    background-color: var(--accent-color);
     z-index: 2;
     display: flex;
     flex-direction: column;
