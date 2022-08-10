@@ -1,0 +1,55 @@
+.news {
+  padding-top: 60px;
+  padding-bottom: 50px;
+
+  &__title {
+    display: block;
+    padding-bottom: 7px;
+    position: relative;
+    font-family: 'PlayfairDisplay', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--dark-color);
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 90px;
+      height: 4px;
+      background-color: var(--dark-color);
+    }
+  }
+
+  &__product {
+    height: 100%;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  &__item {
+    padding: 10px;
+    min-height: 289px;
+
+    &--title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &--big {
+      grid-column: auto / span 2;
+      grid-row: auto / span 2;
+    }
+  }
+
+}

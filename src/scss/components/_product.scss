@@ -1,0 +1,34 @@
+.product {
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: var(--light-color);
+  transition: background-color ease 0.2s;
+
+  &__image {
+    margin-bottom: 10px;
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--dark-color);
+  }
+
+  &__price {
+    margin: 0;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--dark-color);
+  }
+
+  @include hover {
+    background-color: var(--accent-color);
+  }
+}
