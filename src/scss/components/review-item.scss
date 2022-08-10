@@ -1,0 +1,37 @@
+.review-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+
+  &__image {
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #444348;
+    font-style: normal;
+  }
+
+  &__prof {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    width: 650px;
+    margin: 0;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #444348;
+  }
+}

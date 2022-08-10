@@ -1,0 +1,58 @@
+.reviews {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__wrapper {
+    position: relative;
+    width: 866px;
+    margin: 0 auto;
+  }
+
+  &__swiper-pagination {
+    margin-top: 23px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__pagination-bullet {
+    cursor: pointer;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #B3B3B3;
+    border-radius: 50%;
+
+    @include mr(7px);
+
+    &--active {
+      background-color: #B3B3B3;
+    }
+  }
+
+  &__slider-btns {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__slider-btn {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background: var(--light-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-image: url("../img/arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &--next {
+      transform: rotate(180deg);
+    }
+
+    &--prev {
+
+    }
+  }
+}
