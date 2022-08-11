@@ -49,6 +49,11 @@
   &__info {
     max-width: 545px;
     margin-right: 30px;
+
+    @include high-tablet {
+      max-width: 320px;
+      margin-right: 10px;
+    }
   }
 
   &__title {
@@ -61,6 +66,10 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: var(--dark-color);
+
+    @include high-tablet {
+      font-size: 33px;
+    }
   }
 
   &__descr {
@@ -70,6 +79,10 @@
     font-size: 20px;
     line-height: 27px;
     color: var(--dark-color);
+
+    @include high-tablet {
+      font-size: 22px;
+    }
   }
 
   &__prices {
@@ -84,6 +97,10 @@
         line-height: 27px;
         color: var(--dark-color);
         margin-right: 22px;
+
+        @include high-tablet {
+          font-size: 18px;
+        }
       }
 
       &:last-child {
@@ -91,6 +108,10 @@
         font-size: 30px;
         line-height: 41px;
         color: var(--dark-color);
+
+        @include high-tablet {
+          font-size: 24px;
+        }
       }
     }
   }
@@ -98,5 +119,15 @@
   &__btn {
     padding-left: 80px;
     padding-right: 80px;
+  }
+
+  &__image {
+    img {
+      width: 442px;
+
+      @include high-desktop {
+        width: 300px;
+      }
+    }
   }
 }

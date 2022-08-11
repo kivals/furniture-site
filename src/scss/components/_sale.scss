@@ -18,16 +18,24 @@
   }
 
   .swiper-wrapper {
-    @media (min-width: (768px)) {
-      display: grid;
-      grid-template-columns: repeat(10, 1fr);
-      gap: 31px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 31px;
+
+    @include high-desktop {
+      grid-template-columns: repeat(12, 1fr);
     }
   }
 
   .swiper-slide {
-    @media (min-width: (768px)) {
-      grid-column: 2 span;
+    grid-column: 2 span;
+
+    @include high-desktop {
+      grid-column: 3 span;
+    }
+
+    @include high-tablet {
+      grid-column: 4 span;
     }
   }
 }
