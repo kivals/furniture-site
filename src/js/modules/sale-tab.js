@@ -1,2 +1,2 @@
 import GraphTabs from 'graph-tabs';
-const tabs = new GraphTabs('popup');
+const tabs = new GraphTabs('sale-tabs');
