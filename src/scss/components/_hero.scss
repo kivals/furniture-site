@@ -3,6 +3,20 @@
   padding-bottom: 60px;
   background: linear-gradient(to right, transparent 59%, var(--accent-color) 0%);
 
+  @include small-tablet {
+    padding-top: 0;
+    background: none;
+
+    &:before {
+      content: '';
+      position: absolute;
+      right: 0;
+      background-color: var(--accent-color);
+      width: var(--container-offset);
+      height: 327px;
+    }
+  }
+
   &__swiper {
     position: relative;
   }
@@ -16,6 +30,10 @@
     position: absolute;
     right: 0;
     top: 0;
+
+    @include small-tablet {
+      display: none;
+    }
   }
 
   &__pagination-bullet {
@@ -44,6 +62,10 @@
   &__item {
     display: flex;
     align-items: center;
+
+    @include small-tablet {
+      flex-direction: column;
+    }
   }
 
   &__info {
@@ -53,6 +75,13 @@
     @include high-tablet {
       max-width: 320px;
       margin-right: 10px;
+    }
+
+    @include small-tablet {
+      width: 100%;
+      order: 2;
+      margin-right: 0;
+      max-width: 100%;
     }
   }
 
@@ -119,6 +148,12 @@
   &__btn {
     padding-left: 80px;
     padding-right: 80px;
+
+    @include small-tablet {
+      width: 100%;
+      padding-left: unset;
+      padding-right: unset;
+    }
   }
 
   &__image {
@@ -128,6 +163,24 @@
       @include high-desktop {
         width: 300px;
       }
+
+      @include small-tablet {
+        width: 250px;
+      }
+    }
+
+    @include small-tablet {
+      box-sizing: border-box;
+      order: 1;
+      height: 327px;
+      width: 100%;
+      text-align: center;
+      background: linear-gradient(to right, transparent 50%, var(--accent-color) 0%);
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding-bottom: 25px;
+      margin-bottom: 30px;
     }
   }
 }
