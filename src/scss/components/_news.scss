@@ -11,21 +11,42 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
+
+    @include high-tablet {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 
   &__item {
     padding: 10px;
     min-height: 289px;
 
+    @include high-tablet {
+      width: 49%;
+    }
+
     &--title {
       display: flex;
       flex-direction: column;
       justify-content: center;
+
+      @include high-tablet {
+        width: 100%;
+        min-height: auto;
+      }
     }
 
     &--big {
       grid-column: auto / span 2;
       grid-row: auto / span 2;
+
+      .product__image img {
+        @include high-tablet {
+          height: 200px;
+        }
+      }
     }
   }
 
