@@ -5,6 +5,12 @@
   width: 100%;
   padding-top: 90px;
 
+  @include small-tablet {
+    position: static;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
   &__container {
     display: flex;
     align-items: center;
@@ -22,5 +28,10 @@
   &__user-nav {
     flex-shrink: 0;
     margin-left: 20px;
+
+    @include small-tablet {
+      margin-left: auto;
+      margin-right: 40px;
+    }
   }
 }

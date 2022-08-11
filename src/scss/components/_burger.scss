@@ -1,0 +1,42 @@
+.burger {
+  display: none;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  width: 25px;
+  height: 17px;
+
+  &__line {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 100px;
+    width: 26px;
+    height: 2px;
+    background-color: #313133;
+    transform: translateX(-50%) translateY(-50%);
+
+    &:first-child {
+      margin-top: -8px;
+    }
+
+    &:last-child {
+      margin-top: 8px;
+    }
+  }
+
+  @include small-tablet {
+    display: block;
+  }
+}
+
+.burger-close {
+  position: absolute;
+  right: var(--container-offset);
+  top: 30px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/close.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}

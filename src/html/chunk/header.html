@@ -3,12 +3,13 @@
     <a href="#" class="header__logo logo">
       <img loading="lazy" src="./img/logo.svg" width="20" height="20" alt="Логотип Сайта">
     </a>
-    <nav class="site-nav header__site-nav">
+    <nav class="site-nav header__site-nav" data-menu>
       <ul class="site-nav__list list-reset" title="Главное меню">
-       <li class="site-nav__item"><a href="#" class="site-nav__link">Мебель</a></li>
-       <li class="site-nav__item"><a href="#" class="site-nav__link">Освещение</a></li>
-       <li class="site-nav__item"><a href="#" class="site-nav__link">Текстиль</a></li>
+       <li class="site-nav__item" data-menu-item><a href="#" class="site-nav__link">Мебель</a></li>
+       <li class="site-nav__item" data-menu-item><a href="#" class="site-nav__link">Освещение</a></li>
+       <li class="site-nav__item" data-menu-item><a href="#" class="site-nav__link">Текстиль</a></li>
       </ul>
+      <button class="btn-reset burger-close" aria-label="Закрыть меню" data-menu-close></button>
     </nav>
     <ul class="user-nav header__user-nav list-reset ">
       <li class="user-nav__item user-nav__item--search">
@@ -23,5 +24,10 @@
         </a>
       </li>
     </ul>
+    <button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
   </div>
 </header>
