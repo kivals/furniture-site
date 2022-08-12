@@ -31,6 +31,7 @@
 }
 
 .burger-close {
+  display: none;
   position: absolute;
   right: var(--container-offset);
   top: 30px;
@@ -39,4 +40,8 @@
   background-image: url("../img/close.svg");
   background-position: center;
   background-repeat: no-repeat;
+
+  @include small-tablet {
+    display: block;
+  }
 }

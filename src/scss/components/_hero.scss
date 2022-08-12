@@ -21,8 +21,9 @@
     position: relative;
   }
 
-  &__pagination {
-    background-color: var(--accent-color);
+  &__controls {
+    border-radius: 8px;
+    background-color: rgba(#FAECE9, 0.7);
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -32,15 +33,44 @@
     top: 0;
 
     @include small-tablet {
-      display: none;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      margin-top: 25px;
+      position: static;
+      background-color: transparent;
     }
+  }
+
+  &__scrollbar {
+    display: none;
+
+    @include small-tablet {
+      display: block;
+      height: 3px;
+      width: 100%;
+      background-color: rgba(#141215, 0.1);
+      margin-right: 15px;
+
+      .swiper-scrollbar-drag {
+        background-color: var(--dark-color);
+      }
+    }
+  }
+
+  &__pagination {
+    flex-shrink: 0;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 170%;
+    color: #141215;
   }
 
   &__pagination-bullet {
     @include flex-all-center;
 
     cursor: pointer;
-    padding: 7px 20px;
+    padding: 7px;
     font-family: 'PlayfairDisplay', sans-serif;
     font-weight: 400;
     font-size: 20px;
