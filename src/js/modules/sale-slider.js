@@ -17,14 +17,13 @@ let swiper = null;
 const breakpoint = window.matchMedia('(max-width: 576px)');
 
 if (breakpoint.matches) {
-  console.log('Swiper GO');
-  swiper = new Swiper('.sale__swiper', config)
+  swiper = new Swiper('.sale__swiper', config);
 }
 
-breakpoint.addEventListener('change', (e) => {
-  swiper?.destroy();
+breakpoint.addEventListener('change', function (e) {
   if (e.matches) {
-    console.log('Swiper GO');
-    swiper = new Swiper('', config)
+    swiper = new Swiper('.sale__swiper', config);
+  } else {
+    swiper?.map(sw => sw.destroy());
   }
 })

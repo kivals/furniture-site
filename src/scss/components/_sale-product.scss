@@ -19,6 +19,13 @@
     }
   }
 
+  @include mobile {
+    border-top: 5px solid var(--dark-color);
+    .sale-product__btn {
+      opacity: 1;
+    }
+  }
+
   &__image {
     height: 252px;
 

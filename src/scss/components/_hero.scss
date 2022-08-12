@@ -17,6 +17,11 @@
     }
   }
 
+  @include mobile {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
   &__swiper {
     position: relative;
   }
@@ -128,6 +133,10 @@
     @include high-tablet {
       font-size: 33px;
     }
+
+    @include mobile {
+      font-size: 27px;
+    }
   }
 
   &__descr {
@@ -140,6 +149,10 @@
 
     @include high-tablet {
       font-size: 22px;
+    }
+
+    @include mobile {
+      font-size: 20px;
     }
   }
 
