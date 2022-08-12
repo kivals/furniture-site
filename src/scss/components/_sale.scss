@@ -11,10 +11,49 @@
     left: 0;
     width: 54%;
     height: 77%;
+
+    @include mobile {
+      background-color: transparent;
+    }
   }
 
   &__title {
     margin-bottom: 37px;
+  }
+
+  &__controls {
+    display: none;
+
+    @include mobile {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      margin-top: 25px;
+      position: static;
+      background-color: transparent;
+    }
+  }
+
+  &__scrollbar {
+    @include small-tablet {
+      display: block;
+      height: 3px;
+      width: 100%;
+      background-color: rgba(#141215, 0.1);
+      margin-right: 15px;
+
+      .swiper-scrollbar-drag {
+        background-color: var(--dark-color);
+      }
+    }
+  }
+
+  &__pagination {
+    flex-shrink: 0;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 170%;
+    color: #141215;
   }
 
   .swiper-wrapper {
@@ -24,6 +63,11 @@
 
     @include high-desktop {
       grid-template-columns: repeat(12, 1fr);
+    }
+
+    @include mobile {
+      display: flex;
+      gap: unset;
     }
   }
 
@@ -37,6 +81,10 @@
     @include high-tablet {
       grid-column: 4 span;
     }
+
+    @include small-tablet {
+      grid-column: 6 span;
+    }
   }
 }
 
@@ -46,6 +94,10 @@
     display: flex;
     align-items: center;
     margin-bottom: 25px;
+
+    @include mobile {
+      justify-content: space-between;
+    }
   }
 
   &__nav-item {

@@ -33,7 +33,6 @@
     top: 0;
 
     @include small-tablet {
-      display: flex;
       align-items: center;
       flex-direction: row;
       margin-top: 25px;

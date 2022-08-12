@@ -33,5 +33,9 @@
     line-height: 25px;
     text-align: center;
     color: #444348;
+
+    @include small-tablet {
+      width: auto;
+    }
   }
 }

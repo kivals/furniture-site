@@ -26,6 +26,9 @@
     @include high-tablet {
       width: 49%;
     }
+    @include mobile {
+      width: 100%;
+    }
 
     &--title {
       display: flex;

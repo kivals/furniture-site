@@ -2,5 +2,6 @@
 import './modules/hero-slider.js';
 import './modules/reviews-slider.js';
 import './modules/sale-tab.js';
+import './modules/sale-slider.js';
 import './functions/burger.js';
 
